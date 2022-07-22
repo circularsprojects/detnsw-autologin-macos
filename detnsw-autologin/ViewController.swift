@@ -21,6 +21,11 @@ class ViewController: NSViewController {
         }
     }
 
-
+    @IBAction func loginButton(_ sender: NSButton) {
+    }
+    
+    @IBAction func saveButton(_ sender: NSButton) {
+    }
+    
 }
 
