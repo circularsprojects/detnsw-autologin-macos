@@ -45,6 +45,7 @@
 		4DAFFD31288A38A500C70680 /* detnsw-autologinUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "detnsw-autologinUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DAFFD35288A38A500C70680 /* detnsw_autologinUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detnsw_autologinUITests.swift; sourceTree = "<group>"; };
 		4DAFFD37288A38A500C70680 /* detnsw_autologinUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detnsw_autologinUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4DAFFD44288A50C700C70680 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +76,7 @@
 		4DAFFD0D288A38A100C70680 = {
 			isa = PBXGroup;
 			children = (
+				4DAFFD44288A50C700C70680 /* README.md */,
 				4DAFFD18288A38A100C70680 /* detnsw-autologin */,
 				4DAFFD2A288A38A500C70680 /* detnsw-autologinTests */,
 				4DAFFD34288A38A500C70680 /* detnsw-autologinUITests */,
