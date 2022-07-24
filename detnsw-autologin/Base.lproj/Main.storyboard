@@ -195,6 +195,10 @@
                             </button>
                         </subviews>
                     </view>
+                    <connections>
+                        <outlet property="password" destination="lUR-Gs-gSu" id="qpS-f8-oUy"/>
+                        <outlet property="username" destination="Z3d-xb-SMF" id="dUq-c1-VnA"/>
+                    </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>

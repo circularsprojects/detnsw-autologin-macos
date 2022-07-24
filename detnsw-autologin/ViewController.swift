@@ -8,7 +8,10 @@
 import Cocoa
 
 class ViewController: NSViewController {
-
+    let defaults = UserDefaults.standard
+    @IBOutlet var username: NSTextField!
+    @IBOutlet var password: NSSecureTextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,9 +25,12 @@ class ViewController: NSViewController {
     }
 
     @IBAction func loginButton(_ sender: NSButton) {
+        let username = defaults.string(forKey: "username")
+        password.stringValue = username ?? "null"
     }
     
     @IBAction func saveButton(_ sender: NSButton) {
+        defaults.set(username.stringValue, forKey: "username")
     }
     
 }
