@@ -14,6 +14,7 @@
 		4DAFFD2C288A38A500C70680 /* detnsw_autologinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DAFFD2B288A38A500C70680 /* detnsw_autologinTests.swift */; };
 		4DAFFD36288A38A500C70680 /* detnsw_autologinUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DAFFD35288A38A500C70680 /* detnsw_autologinUITests.swift */; };
 		4DAFFD38288A38A500C70680 /* detnsw_autologinUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DAFFD37288A38A500C70680 /* detnsw_autologinUITestsLaunchTests.swift */; };
+		4DAFFD46288E314500C70680 /* keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DAFFD45288E314500C70680 /* keychain.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		4DAFFD35288A38A500C70680 /* detnsw_autologinUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detnsw_autologinUITests.swift; sourceTree = "<group>"; };
 		4DAFFD37288A38A500C70680 /* detnsw_autologinUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detnsw_autologinUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		4DAFFD44288A50C700C70680 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		4DAFFD45288E314500C70680 /* keychain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = keychain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				4DAFFD1D288A38A500C70680 /* Assets.xcassets */,
 				4DAFFD1F288A38A500C70680 /* Main.storyboard */,
 				4DAFFD22288A38A500C70680 /* detnsw_autologin.entitlements */,
+				4DAFFD45288E314500C70680 /* keychain.swift */,
 			);
 			path = "detnsw-autologin";
 			sourceTree = "<group>";
@@ -254,6 +257,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4DAFFD1C288A38A100C70680 /* ViewController.swift in Sources */,
+				4DAFFD46288E314500C70680 /* keychain.swift in Sources */,
 				4DAFFD1A288A38A100C70680 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
