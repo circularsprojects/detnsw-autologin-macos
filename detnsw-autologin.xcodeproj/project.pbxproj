@@ -15,6 +15,12 @@
 		4DAFFD36288A38A500C70680 /* detnsw_autologinUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DAFFD35288A38A500C70680 /* detnsw_autologinUITests.swift */; };
 		4DAFFD38288A38A500C70680 /* detnsw_autologinUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DAFFD37288A38A500C70680 /* detnsw_autologinUITestsLaunchTests.swift */; };
 		4DAFFD46288E314500C70680 /* keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DAFFD45288E314500C70680 /* keychain.swift */; };
+		4DFC29C6288FA32700905466 /* HelperAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFC29C5288FA32700905466 /* HelperAppDelegate.swift */; };
+		4DFC29CA288FA32700905466 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DFC29C9288FA32700905466 /* Assets.xcassets */; };
+		4DFC29CD288FA32700905466 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DFC29CB288FA32700905466 /* Main.storyboard */; };
+		4DFC29D8288FA32800905466 /* detnsw_autologin_helperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFC29D7288FA32800905466 /* detnsw_autologin_helperTests.swift */; };
+		4DFC29E2288FA32800905466 /* detnsw_autologin_helperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFC29E1288FA32800905466 /* detnsw_autologin_helperUITests.swift */; };
+		4DFC29E4288FA32800905466 /* detnsw_autologin_helperUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFC29E3288FA32800905466 /* detnsw_autologin_helperUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +38,27 @@
 			remoteGlobalIDString = 4DAFFD15288A38A100C70680;
 			remoteInfo = "detnsw-autologin";
 		};
+		4DEAC6B728922861006B54DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4DAFFD0E288A38A100C70680 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4DAFFD15288A38A100C70680;
+			remoteInfo = "detnsw-autologin";
+		};
+		4DFC29D4288FA32800905466 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4DAFFD0E288A38A100C70680 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4DFC29C2288FA32700905466;
+			remoteInfo = "detnsw-autologin-helper";
+		};
+		4DFC29DE288FA32800905466 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4DAFFD0E288A38A100C70680 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4DFC29C2288FA32700905466;
+			remoteInfo = "detnsw-autologin-helper";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +75,17 @@
 		4DAFFD37288A38A500C70680 /* detnsw_autologinUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detnsw_autologinUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		4DAFFD44288A50C700C70680 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		4DAFFD45288E314500C70680 /* keychain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = keychain.swift; sourceTree = "<group>"; };
+		4DEAC6B928922904006B54DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		4DFC29C3288FA32700905466 /* detnsw-autologin-helper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "detnsw-autologin-helper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DFC29C5288FA32700905466 /* HelperAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperAppDelegate.swift; sourceTree = "<group>"; };
+		4DFC29C9288FA32700905466 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4DFC29CC288FA32700905466 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4DFC29CE288FA32700905466 /* detnsw_autologin_helper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = detnsw_autologin_helper.entitlements; sourceTree = "<group>"; };
+		4DFC29D3288FA32800905466 /* detnsw-autologin-helperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "detnsw-autologin-helperTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DFC29D7288FA32800905466 /* detnsw_autologin_helperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detnsw_autologin_helperTests.swift; sourceTree = "<group>"; };
+		4DFC29DD288FA32800905466 /* detnsw-autologin-helperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "detnsw-autologin-helperUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DFC29E1288FA32800905466 /* detnsw_autologin_helperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detnsw_autologin_helperUITests.swift; sourceTree = "<group>"; };
+		4DFC29E3288FA32800905466 /* detnsw_autologin_helperUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detnsw_autologin_helperUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +110,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4DFC29C0288FA32700905466 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DFC29D0288FA32800905466 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DFC29DA288FA32800905466 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -82,6 +141,9 @@
 				4DAFFD18288A38A100C70680 /* detnsw-autologin */,
 				4DAFFD2A288A38A500C70680 /* detnsw-autologinTests */,
 				4DAFFD34288A38A500C70680 /* detnsw-autologinUITests */,
+				4DFC29C4288FA32700905466 /* detnsw-autologin-helper */,
+				4DFC29D6288FA32800905466 /* detnsw-autologin-helperTests */,
+				4DFC29E0288FA32800905466 /* detnsw-autologin-helperUITests */,
 				4DAFFD17288A38A100C70680 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -92,6 +154,9 @@
 				4DAFFD16288A38A100C70680 /* detnsw-autologin.app */,
 				4DAFFD27288A38A500C70680 /* detnsw-autologinTests.xctest */,
 				4DAFFD31288A38A500C70680 /* detnsw-autologinUITests.xctest */,
+				4DFC29C3288FA32700905466 /* detnsw-autologin-helper.app */,
+				4DFC29D3288FA32800905466 /* detnsw-autologin-helperTests.xctest */,
+				4DFC29DD288FA32800905466 /* detnsw-autologin-helperUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -124,6 +189,35 @@
 				4DAFFD37288A38A500C70680 /* detnsw_autologinUITestsLaunchTests.swift */,
 			);
 			path = "detnsw-autologinUITests";
+			sourceTree = "<group>";
+		};
+		4DFC29C4288FA32700905466 /* detnsw-autologin-helper */ = {
+			isa = PBXGroup;
+			children = (
+				4DEAC6B928922904006B54DA /* Info.plist */,
+				4DFC29C5288FA32700905466 /* HelperAppDelegate.swift */,
+				4DFC29C9288FA32700905466 /* Assets.xcassets */,
+				4DFC29CB288FA32700905466 /* Main.storyboard */,
+				4DFC29CE288FA32700905466 /* detnsw_autologin_helper.entitlements */,
+			);
+			path = "detnsw-autologin-helper";
+			sourceTree = "<group>";
+		};
+		4DFC29D6288FA32800905466 /* detnsw-autologin-helperTests */ = {
+			isa = PBXGroup;
+			children = (
+				4DFC29D7288FA32800905466 /* detnsw_autologin_helperTests.swift */,
+			);
+			path = "detnsw-autologin-helperTests";
+			sourceTree = "<group>";
+		};
+		4DFC29E0288FA32800905466 /* detnsw-autologin-helperUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4DFC29E1288FA32800905466 /* detnsw_autologin_helperUITests.swift */,
+				4DFC29E3288FA32800905466 /* detnsw_autologin_helperUITestsLaunchTests.swift */,
+			);
+			path = "detnsw-autologin-helperUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,6 +276,60 @@
 			productReference = 4DAFFD31288A38A500C70680 /* detnsw-autologinUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		4DFC29C2288FA32700905466 /* detnsw-autologin-helper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DFC29E5288FA32800905466 /* Build configuration list for PBXNativeTarget "detnsw-autologin-helper" */;
+			buildPhases = (
+				4DFC29BF288FA32700905466 /* Sources */,
+				4DFC29C0288FA32700905466 /* Frameworks */,
+				4DFC29C1288FA32700905466 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "detnsw-autologin-helper";
+			productName = "detnsw-autologin-helper";
+			productReference = 4DFC29C3288FA32700905466 /* detnsw-autologin-helper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4DFC29D2288FA32800905466 /* detnsw-autologin-helperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DFC29E8288FA32800905466 /* Build configuration list for PBXNativeTarget "detnsw-autologin-helperTests" */;
+			buildPhases = (
+				4DFC29CF288FA32800905466 /* Sources */,
+				4DFC29D0288FA32800905466 /* Frameworks */,
+				4DFC29D1288FA32800905466 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4DFC29D5288FA32800905466 /* PBXTargetDependency */,
+			);
+			name = "detnsw-autologin-helperTests";
+			productName = "detnsw-autologin-helperTests";
+			productReference = 4DFC29D3288FA32800905466 /* detnsw-autologin-helperTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4DFC29DC288FA32800905466 /* detnsw-autologin-helperUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DFC29EB288FA32800905466 /* Build configuration list for PBXNativeTarget "detnsw-autologin-helperUITests" */;
+			buildPhases = (
+				4DFC29D9288FA32800905466 /* Sources */,
+				4DFC29DA288FA32800905466 /* Frameworks */,
+				4DFC29DB288FA32800905466 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4DFC29DF288FA32800905466 /* PBXTargetDependency */,
+				4DEAC6B828922861006B54DA /* PBXTargetDependency */,
+			);
+			name = "detnsw-autologin-helperUITests";
+			productName = "detnsw-autologin-helperUITests";
+			productReference = 4DFC29DD288FA32800905466 /* detnsw-autologin-helperUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -203,6 +351,17 @@
 						CreatedOnToolsVersion = 13.4.1;
 						TestTargetID = 4DAFFD15288A38A100C70680;
 					};
+					4DFC29C2288FA32700905466 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					4DFC29D2288FA32800905466 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 4DFC29C2288FA32700905466;
+					};
+					4DFC29DC288FA32800905466 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 4DFC29C2288FA32700905466;
+					};
 				};
 			};
 			buildConfigurationList = 4DAFFD11288A38A100C70680 /* Build configuration list for PBXProject "detnsw-autologin" */;
@@ -221,6 +380,9 @@
 				4DAFFD15288A38A100C70680 /* detnsw-autologin */,
 				4DAFFD26288A38A500C70680 /* detnsw-autologinTests */,
 				4DAFFD30288A38A500C70680 /* detnsw-autologinUITests */,
+				4DFC29C2288FA32700905466 /* detnsw-autologin-helper */,
+				4DFC29D2288FA32800905466 /* detnsw-autologin-helperTests */,
+				4DFC29DC288FA32800905466 /* detnsw-autologin-helperUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -243,6 +405,29 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		4DAFFD2F288A38A500C70680 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DFC29C1288FA32700905466 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DFC29CA288FA32700905466 /* Assets.xcassets in Resources */,
+				4DFC29CD288FA32700905466 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DFC29D1288FA32800905466 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DFC29DB288FA32800905466 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -279,6 +464,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4DFC29BF288FA32700905466 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DFC29C6288FA32700905466 /* HelperAppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DFC29CF288FA32800905466 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DFC29D8288FA32800905466 /* detnsw_autologin_helperTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DFC29D9288FA32800905466 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DFC29E4288FA32800905466 /* detnsw_autologin_helperUITestsLaunchTests.swift in Sources */,
+				4DFC29E2288FA32800905466 /* detnsw_autologin_helperUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -292,6 +502,21 @@
 			target = 4DAFFD15288A38A100C70680 /* detnsw-autologin */;
 			targetProxy = 4DAFFD32288A38A500C70680 /* PBXContainerItemProxy */;
 		};
+		4DEAC6B828922861006B54DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4DAFFD15288A38A100C70680 /* detnsw-autologin */;
+			targetProxy = 4DEAC6B728922861006B54DA /* PBXContainerItemProxy */;
+		};
+		4DFC29D5288FA32800905466 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4DFC29C2288FA32700905466 /* detnsw-autologin-helper */;
+			targetProxy = 4DFC29D4288FA32800905466 /* PBXContainerItemProxy */;
+		};
+		4DFC29DF288FA32800905466 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4DFC29C2288FA32700905466 /* detnsw-autologin-helper */;
+			targetProxy = 4DFC29DE288FA32800905466 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -299,6 +524,14 @@
 			isa = PBXVariantGroup;
 			children = (
 				4DAFFD20288A38A500C70680 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4DFC29CB288FA32700905466 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4DFC29CC288FA32700905466 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -424,7 +657,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = "detnsw-autologin/detnsw_autologin.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -451,7 +686,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = "detnsw-autologin/detnsw_autologin.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -545,6 +782,138 @@
 			};
 			name = Release;
 		};
+		4DFC29E6288FA32800905466 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "detnsw-autologin-helper/detnsw_autologin_helper.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QX9LC82293;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "detnsw-autologin-helper/Info.plist";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "circularsprojects.detnsw-autologin-helper";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		4DFC29E7288FA32800905466 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "detnsw-autologin-helper/detnsw_autologin_helper.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QX9LC82293;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "detnsw-autologin-helper/Info.plist";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "circularsprojects.detnsw-autologin-helper";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		4DFC29E9288FA32800905466 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QX9LC82293;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "circularsprojects.detnsw-autologin-helperTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/detnsw-autologin-helper.app/Contents/MacOS/detnsw-autologin-helper";
+			};
+			name = Debug;
+		};
+		4DFC29EA288FA32800905466 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QX9LC82293;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "circularsprojects.detnsw-autologin-helperTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/detnsw-autologin-helper.app/Contents/MacOS/detnsw-autologin-helper";
+			};
+			name = Release;
+		};
+		4DFC29EC288FA32800905466 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QX9LC82293;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "circularsprojects.detnsw-autologin-helperUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "detnsw-autologin-helper";
+			};
+			name = Debug;
+		};
+		4DFC29ED288FA32800905466 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QX9LC82293;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "circularsprojects.detnsw-autologin-helperUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "detnsw-autologin-helper";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -580,6 +949,33 @@
 			buildConfigurations = (
 				4DAFFD42288A38A500C70680 /* Debug */,
 				4DAFFD43288A38A500C70680 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4DFC29E5288FA32800905466 /* Build configuration list for PBXNativeTarget "detnsw-autologin-helper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DFC29E6288FA32800905466 /* Debug */,
+				4DFC29E7288FA32800905466 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4DFC29E8288FA32800905466 /* Build configuration list for PBXNativeTarget "detnsw-autologin-helperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DFC29E9288FA32800905466 /* Debug */,
+				4DFC29EA288FA32800905466 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4DFC29EB288FA32800905466 /* Build configuration list for PBXNativeTarget "detnsw-autologin-helperUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DFC29EC288FA32800905466 /* Debug */,
+				4DFC29ED288FA32800905466 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
