@@ -6,7 +6,6 @@
 //
 
 import Cocoa
-import ServiceManagement
 
 class ViewController: NSViewController, NSWindowDelegate {
     let defaults = UserDefaults.standard

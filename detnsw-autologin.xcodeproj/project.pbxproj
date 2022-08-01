@@ -15,6 +15,7 @@
 		4DAFFD36288A38A500C70680 /* detnsw_autologinUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DAFFD35288A38A500C70680 /* detnsw_autologinUITests.swift */; };
 		4DAFFD38288A38A500C70680 /* detnsw_autologinUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DAFFD37288A38A500C70680 /* detnsw_autologinUITestsLaunchTests.swift */; };
 		4DAFFD46288E314500C70680 /* keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DAFFD45288E314500C70680 /* keychain.swift */; };
+		4DCE341828938D0400F24BA6 /* detnsw-autologin-helper.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4DFC29C3288FA32700905466 /* detnsw-autologin-helper.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		4DFC29C6288FA32700905466 /* HelperAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFC29C5288FA32700905466 /* HelperAppDelegate.swift */; };
 		4DFC29CA288FA32700905466 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DFC29C9288FA32700905466 /* Assets.xcassets */; };
 		4DFC29CD288FA32700905466 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DFC29CB288FA32700905466 /* Main.storyboard */; };
@@ -60,6 +61,19 @@
 			remoteInfo = "detnsw-autologin-helper";
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4DCE3416289370C300F24BA6 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/LoginItems;
+			dstSubfolderSpec = 1;
+			files = (
+				4DCE341828938D0400F24BA6 /* detnsw-autologin-helper.app in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		4DAFFD16288A38A100C70680 /* detnsw-autologin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "detnsw-autologin.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -283,6 +297,7 @@
 				4DFC29BF288FA32700905466 /* Sources */,
 				4DFC29C0288FA32700905466 /* Frameworks */,
 				4DFC29C1288FA32700905466 /* Resources */,
+				4DCE3416289370C300F24BA6 /* CopyFiles */,
 			);
 			buildRules = (
 			);
