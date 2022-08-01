@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  detnsw-autologin
 //
-//  Created by Levi Rigger on 22/7/2022.
+//  Created by circularsprojects on 22/7/2022.
 //
 
 import Cocoa

@@ -2,7 +2,7 @@
 //  detnsw_autologin_helperTests.swift
 //  detnsw-autologin-helperTests
 //
-//  Created by Levi Rigger on 26/7/2022.
+//  Created by circularsprojects on 26/7/2022.
 //
 
 import XCTest

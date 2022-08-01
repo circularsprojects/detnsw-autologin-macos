@@ -2,13 +2,14 @@
 //  AppDelegate.swift
 //  detnsw-autologin-helper
 //
-//  Created by Levi Rigger on 26/7/2022.
+//  Created by circularsprojects on 26/7/2022.
 //
 
 import Cocoa
 
 @main
 class AppDelegate: NSObject, NSApplicationDelegate {
+    let defaults = UserDefaults.standard
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         let usernamestored = defaults.string(forKey: "username")!
         let passwordstored = String(decoding: kread(service: "detnsw-autologin", account: usernamestored)!, as: UTF8.self)

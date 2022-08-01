@@ -16,6 +16,7 @@
 		4DAFFD38288A38A500C70680 /* detnsw_autologinUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DAFFD37288A38A500C70680 /* detnsw_autologinUITestsLaunchTests.swift */; };
 		4DAFFD46288E314500C70680 /* keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DAFFD45288E314500C70680 /* keychain.swift */; };
 		4DCE341828938D0400F24BA6 /* detnsw-autologin-helper.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4DFC29C3288FA32700905466 /* detnsw-autologin-helper.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4DCE341A2897725200F24BA6 /* keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCE34192897725200F24BA6 /* keychain.swift */; };
 		4DFC29C6288FA32700905466 /* HelperAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFC29C5288FA32700905466 /* HelperAppDelegate.swift */; };
 		4DFC29CA288FA32700905466 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DFC29C9288FA32700905466 /* Assets.xcassets */; };
 		4DFC29CD288FA32700905466 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DFC29CB288FA32700905466 /* Main.storyboard */; };
@@ -66,8 +67,8 @@
 		4DCE3416289370C300F24BA6 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = Contents/Library/LoginItems;
-			dstSubfolderSpec = 1;
+			dstPath = "detnsw-autologin.app/Contents/Library/LoginItems";
+			dstSubfolderSpec = 16;
 			files = (
 				4DCE341828938D0400F24BA6 /* detnsw-autologin-helper.app in CopyFiles */,
 			);
@@ -89,6 +90,7 @@
 		4DAFFD37288A38A500C70680 /* detnsw_autologinUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detnsw_autologinUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		4DAFFD44288A50C700C70680 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		4DAFFD45288E314500C70680 /* keychain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = keychain.swift; sourceTree = "<group>"; };
+		4DCE34192897725200F24BA6 /* keychain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = keychain.swift; sourceTree = "<group>"; };
 		4DEAC6B928922904006B54DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		4DFC29C3288FA32700905466 /* detnsw-autologin-helper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "detnsw-autologin-helper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DFC29C5288FA32700905466 /* HelperAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperAppDelegate.swift; sourceTree = "<group>"; };
@@ -213,6 +215,7 @@
 				4DFC29C9288FA32700905466 /* Assets.xcassets */,
 				4DFC29CB288FA32700905466 /* Main.storyboard */,
 				4DFC29CE288FA32700905466 /* detnsw_autologin_helper.entitlements */,
+				4DCE34192897725200F24BA6 /* keychain.swift */,
 			);
 			path = "detnsw-autologin-helper";
 			sourceTree = "<group>";
@@ -484,6 +487,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4DFC29C6288FA32700905466 /* HelperAppDelegate.swift in Sources */,
+				4DCE341A2897725200F24BA6 /* keychain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -674,7 +678,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = "detnsw-autologin/detnsw_autologin.entitlements";
-				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -703,7 +707,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = "detnsw-autologin/detnsw_autologin.entitlements";
-				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -803,7 +807,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "detnsw-autologin-helper/detnsw_autologin_helper.entitlements";
-				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -833,7 +837,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "detnsw-autologin-helper/detnsw_autologin_helper.entitlements";
-				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
