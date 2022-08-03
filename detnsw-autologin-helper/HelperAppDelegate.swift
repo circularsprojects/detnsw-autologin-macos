@@ -6,6 +6,7 @@
 //
 
 import Cocoa
+import Network
 
 @main
 class AppDelegate: NSObject, NSApplicationDelegate {
@@ -31,10 +32,15 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                 //print(response.statusCode)
             }
         }
-        let date = Date.now.addingTimeInterval(60)
-        let timer = Timer(fireAt: date, interval: 0, target: self, selector: #selector(task.resume), userInfo: nil, repeats: false)
-        RunLoop.main.add(timer, forMode: .common)
         task.resume()
+        let monitor = NWPathMonitor()
+        monitor.pathUpdateHandler = { path in
+            if path.status == .satisfied {
+                task.resume()
+            }
+        }
+        let queue = DispatchQueue(label: "Monitor")
+        monitor.start(queue: queue)
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
