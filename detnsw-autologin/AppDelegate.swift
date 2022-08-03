@@ -7,6 +7,7 @@
 
 import Cocoa
 import ServiceManagement
+import Network
 
 @main
 class AppDelegate: NSObject, NSApplicationDelegate {
@@ -15,6 +16,18 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         // Insert code here to initialize your application
         let launcherAppId = "circularsprojects.detnsw-autologin-helper"
         SMLoginItemSetEnabled(launcherAppId as CFString, true)
+        
+//        let monitor = NWPathMonitor()
+//        monitor.pathUpdateHandler = { path in
+//            if path.status == .satisfied {
+//                print("We're connected!")
+//            } else {
+//                print("No connection.")
+//            }
+//            //print(path.isExpensive)
+//        }
+//        let queue = DispatchQueue(label: "Monitor")
+//        monitor.start(queue: queue)
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
