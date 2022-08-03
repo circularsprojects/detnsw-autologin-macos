@@ -9,9 +9,9 @@ import Cocoa
 
 @main
 class AppDelegate: NSObject, NSApplicationDelegate {
-    let defaults = UserDefaults.standard
+    let defaults = UserDefaults.init(suiteName: "QX9LC82293.com.circularsprojects.detnsw-autologin-group")
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        let usernamestored = defaults.string(forKey: "username")!
+        let usernamestored = defaults!.string(forKey: "username")!
         let passwordstored = String(decoding: kread(service: "detnsw-autologin", account: usernamestored)!, as: UTF8.self)
         
         let url = URL(string:"https://edgeportal.forti.net.det.nsw.edu.au/portal/selfservice/IatE_CP/")
@@ -31,6 +31,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                 //print(response.statusCode)
             }
         }
+        let date = Date.now.addingTimeInterval(60)
+        let timer = Timer(fireAt: date, interval: 0, target: self, selector: #selector(task.resume), userInfo: nil, repeats: false)
+        RunLoop.main.add(timer, forMode: .common)
         task.resume()
     }
 

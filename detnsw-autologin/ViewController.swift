@@ -8,14 +8,16 @@
 import Cocoa
 
 class ViewController: NSViewController, NSWindowDelegate {
-    let defaults = UserDefaults.standard
+    let defaults = UserDefaults.init(suiteName: "QX9LC82293.com.circularsprojects.detnsw-autologin-group")
     @IBOutlet var username: NSTextField!
     @IBOutlet var password: NSSecureTextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        let usernamestored = defaults!.string(forKey: "username") ?? ""
+        let passwordstored = String(decoding: kread(service: "detnsw-autologin", account: usernamestored) ?? Data("".utf8), as: UTF8.self)
+        username.stringValue = usernamestored
+        password.stringValue = passwordstored
     }
     
     override func viewDidAppear() {
@@ -33,11 +35,9 @@ class ViewController: NSViewController, NSWindowDelegate {
     }
 
     @IBAction func loginButton(_ sender: NSButton) {
-        let usernamestored = defaults.string(forKey: "username")!
+        let usernamestored = defaults!.string(forKey: "username")!
         //password.stringValue = username ?? "null"
         let passwordstored = String(decoding: kread(service: "detnsw-autologin", account: usernamestored)!, as: UTF8.self)
-        print(usernamestored)
-        print(passwordstored)
         
         let url = URL(string:"https://edgeportal.forti.net.det.nsw.edu.au/portal/selfservice/IatE_CP/")
         //let url = URL(string: "https://jsonplaceholder.typicode.com/todos")
@@ -61,15 +61,21 @@ class ViewController: NSViewController, NSWindowDelegate {
     }
     
     @IBAction func saveButton(_ sender: NSButton) {
-        let usernamestored = defaults.string(forKey: "username")
+        let usernamestored = defaults!.string(forKey: "username")
         if (username.stringValue == usernamestored) {
             let utf8p = password.stringValue.utf8
             ksave(Data(utf8p), service: "detnsw-autologin", account: username.stringValue)
         } else {
-            kdelete(service: "detnsw-autologin", account: usernamestored!)
-            defaults.set(username.stringValue, forKey: "username")
-            let utf8p = password.stringValue.utf8
-            ksave(Data(utf8p), service: "detnsw-autologin", account: username.stringValue)
+            if (usernamestored == nil) {
+                defaults!.set(username.stringValue, forKey: "username")
+                let utf8p = password.stringValue.utf8
+                ksave(Data(utf8p), service: "detnsw-autologin", account: username.stringValue)
+            } else {
+                kdelete(service: "detnsw-autologin", account: usernamestored!)
+                defaults!.set(username.stringValue, forKey: "username")
+                let utf8p = password.stringValue.utf8
+                ksave(Data(utf8p), service: "detnsw-autologin", account: username.stringValue)
+            }
         }
     }
 }
