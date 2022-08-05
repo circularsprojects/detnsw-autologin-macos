@@ -32,7 +32,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                 //print(response.statusCode)
             }
         }
-        task.resume()
+        
         let monitor = NWPathMonitor()
         monitor.pathUpdateHandler = { path in
             if path.status == .satisfied {
