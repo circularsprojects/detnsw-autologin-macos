@@ -26,6 +26,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		4D15932928C961340064F193 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4DAFFD0E288A38A100C70680 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4DFC29C2288FA32700905466;
+			remoteInfo = "detnsw-autologin-helper";
+		};
 		4DAFFD28288A38A500C70680 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4DAFFD0E288A38A100C70680 /* Project object */;
@@ -66,7 +73,7 @@
 /* Begin PBXCopyFilesBuildPhase section */
 		4DCE3416289370C300F24BA6 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 12;
 			dstPath = "detnsw-autologin.app/Contents/Library/LoginItems";
 			dstSubfolderSpec = 16;
 			files = (
@@ -251,6 +258,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				4D15932A28C961340064F193 /* PBXTargetDependency */,
 			);
 			name = "detnsw-autologin";
 			productName = "detnsw-autologin";
@@ -511,6 +519,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		4D15932A28C961340064F193 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4DFC29C2288FA32700905466 /* detnsw-autologin-helper */;
+			targetProxy = 4D15932928C961340064F193 /* PBXContainerItemProxy */;
+		};
 		4DAFFD29288A38A500C70680 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 4DAFFD15288A38A100C70680 /* detnsw-autologin */;
@@ -685,6 +698,7 @@
 				DEVELOPMENT_TEAM = QX9LC82293;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
@@ -715,6 +729,7 @@
 				DEVELOPMENT_TEAM = QX9LC82293;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
@@ -817,6 +832,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "detnsw-autologin-helper/Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
@@ -848,6 +864,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "detnsw-autologin-helper/Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
