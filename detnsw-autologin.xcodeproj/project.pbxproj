@@ -15,8 +15,8 @@
 		4DAFFD36288A38A500C70680 /* detnsw_autologinUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DAFFD35288A38A500C70680 /* detnsw_autologinUITests.swift */; };
 		4DAFFD38288A38A500C70680 /* detnsw_autologinUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DAFFD37288A38A500C70680 /* detnsw_autologinUITestsLaunchTests.swift */; };
 		4DAFFD46288E314500C70680 /* keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DAFFD45288E314500C70680 /* keychain.swift */; };
-		4DCE341828938D0400F24BA6 /* detnsw-autologin-helper.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4DFC29C3288FA32700905466 /* detnsw-autologin-helper.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		4DCE341A2897725200F24BA6 /* keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCE34192897725200F24BA6 /* keychain.swift */; };
+		4DE179D028CAC27E00B5B775 /* detnsw-autologin-helper.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4DFC29C3288FA32700905466 /* detnsw-autologin-helper.app */; };
 		4DFC29C6288FA32700905466 /* HelperAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFC29C5288FA32700905466 /* HelperAppDelegate.swift */; };
 		4DFC29CA288FA32700905466 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DFC29C9288FA32700905466 /* Assets.xcassets */; };
 		4DFC29CD288FA32700905466 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DFC29CB288FA32700905466 /* Main.storyboard */; };
@@ -71,13 +71,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		4DCE3416289370C300F24BA6 /* CopyFiles */ = {
+		4DE179CF28CAC27400B5B775 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 12;
+			buildActionMask = 2147483647;
 			dstPath = "detnsw-autologin.app/Contents/Library/LoginItems";
 			dstSubfolderSpec = 16;
 			files = (
-				4DCE341828938D0400F24BA6 /* detnsw-autologin-helper.app in CopyFiles */,
+				4DE179D028CAC27E00B5B775 /* detnsw-autologin-helper.app in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,6 +254,7 @@
 				4DAFFD12288A38A100C70680 /* Sources */,
 				4DAFFD13288A38A100C70680 /* Frameworks */,
 				4DAFFD14288A38A100C70680 /* Resources */,
+				4DE179CF28CAC27400B5B775 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -308,7 +309,6 @@
 				4DFC29BF288FA32700905466 /* Sources */,
 				4DFC29C0288FA32700905466 /* Frameworks */,
 				4DFC29C1288FA32700905466 /* Resources */,
-				4DCE3416289370C300F24BA6 /* CopyFiles */,
 			);
 			buildRules = (
 			);
