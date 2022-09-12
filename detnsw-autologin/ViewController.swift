@@ -6,6 +6,7 @@
 //
 
 import Cocoa
+import ServiceManagement
 
 class ViewController: NSViewController, NSWindowDelegate {
     let defaults = UserDefaults.init(suiteName: "QX9LC82293.com.circularsprojects.detnsw-autologin-group")
@@ -35,9 +36,9 @@ class ViewController: NSViewController, NSWindowDelegate {
     }
 
     @IBAction func loginButton(_ sender: NSButton) {
-        let usernamestored = defaults!.string(forKey: "username")!
+//        let usernamestored = defaults!.string(forKey: "username")!
         //password.stringValue = username ?? "null"
-        let passwordstored = String(decoding: kread(service: "detnsw-autologin", account: usernamestored)!, as: UTF8.self)
+//        let passwordstored = String(decoding: kread(service: "detnsw-autologin", account: usernamestored)!, as: UTF8.self)
         
         let url = URL(string:"https://edgeportal.forti.net.det.nsw.edu.au/portal/selfservice/IatE_CP/")
         //let url = URL(string: "https://jsonplaceholder.typicode.com/todos")
@@ -77,6 +78,14 @@ class ViewController: NSViewController, NSWindowDelegate {
                 ksave(Data(utf8p), service: "detnsw-autologin", account: username.stringValue)
             }
         }
+    }
+    @IBAction func enableLogin(_ sender: NSButton) {
+        let launcherAppId = "circularsprojects.detnsw-autologin-helper"
+        SMLoginItemSetEnabled(launcherAppId as CFString, true)
+    }
+    @IBAction func disableLogin(_ sender: NSButton) {
+        let launcherAppId = "circularsprojects.detnsw-autologin-helper"
+        SMLoginItemSetEnabled(launcherAppId as CFString, false)
     }
 }
 

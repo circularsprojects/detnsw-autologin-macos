@@ -14,8 +14,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application
-        let launcherAppId = "circularsprojects.detnsw-autologin-helper"
-        SMLoginItemSetEnabled(launcherAppId as CFString, true)
+//        let launcherAppId = "circularsprojects.detnsw-autologin-helper"
+//        SMLoginItemSetEnabled(launcherAppId as CFString, true)
         
 //        let monitor = NWPathMonitor()
 //        monitor.pathUpdateHandler = { path in
