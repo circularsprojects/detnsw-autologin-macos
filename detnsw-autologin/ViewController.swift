@@ -41,7 +41,6 @@ class ViewController: NSViewController, NSWindowDelegate {
 //        let passwordstored = String(decoding: kread(service: "detnsw-autologin", account: usernamestored)!, as: UTF8.self)
         
         let url = URL(string:"https://edgeportal.forti.net.det.nsw.edu.au/portal/selfservice/IatE_CP/")
-        //let url = URL(string: "https://jsonplaceholder.typicode.com/todos")
         guard let requestUrl = url else { fatalError() }
         var request = URLRequest(url: requestUrl)
         request.httpMethod = "POST"
