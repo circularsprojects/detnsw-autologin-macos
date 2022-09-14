@@ -30,16 +30,10 @@ class ViewController: NSViewController, NSWindowDelegate {
     }
 
     override var representedObject: Any? {
-        didSet {
-        // Update the view, if already loaded.
-        }
+        didSet {}
     }
 
     @IBAction func loginButton(_ sender: NSButton) {
-//        let usernamestored = defaults!.string(forKey: "username")!
-        //password.stringValue = username ?? "null"
-//        let passwordstored = String(decoding: kread(service: "detnsw-autologin", account: usernamestored)!, as: UTF8.self)
-        
         let url = URL(string:"https://edgeportal.forti.net.det.nsw.edu.au/portal/selfservice/IatE_CP/")
         guard let requestUrl = url else { fatalError() }
         var request = URLRequest(url: requestUrl)
@@ -50,12 +44,16 @@ class ViewController: NSViewController, NSWindowDelegate {
         let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
             if let error = error {
                 print("Error took place \(error)")
+                let alert = NSAlert()
+                alert.messageText = "An error occurred"
+                alert.informativeText = error.localizedDescription
+                alert.addButton(withTitle: "OK")
+                alert.addButton(withTitle: "Cancel")
+                alert.alertStyle = .warning
+                alert.runModal()
                 return
             }
-            if let data = data, let _ = String(data: data, encoding: .utf8) {
-                //print("Response data string:\n \(dataString)")
-                //print(response.statusCode)
-            }
+            if let data = data, let _ = String(data: data, encoding: .utf8) {}
         }
         task.resume()
     }

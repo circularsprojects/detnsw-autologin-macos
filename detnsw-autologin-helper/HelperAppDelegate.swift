@@ -31,10 +31,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                         print("Error took place \(error)")
                         return
                     }
-                    if let data = data, let _ = String(data: data, encoding: .utf8) {
-                        //print("Response data string:\n \(dataString)")
-                        //print(response.statusCode)
-                    }
+                    if let data = data, let _ = String(data: data, encoding: .utf8) {}
                 }
                 task.resume()
                 print("Internet connected")
@@ -44,9 +41,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         monitor.start(queue: queue)
     }
 
-    func applicationWillTerminate(_ aNotification: Notification) {
-        // Insert code here to tear down your application
-    }
+    func applicationWillTerminate(_ aNotification: Notification) {}
 
     func applicationSupportsSecureRestorableState(_ app: NSApplication) -> Bool {
         return true
