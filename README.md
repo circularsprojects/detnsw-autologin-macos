@@ -5,4 +5,5 @@ now made in xcode swift and not xamarin.mac because it sucked
  - check macos version (`ProcessInfo.processInfo.operatingSystemVersion.majorVersion`)
     - 12: use SMLoginItem...
     - 13: use register()
+    - will be done when macos 13 releases (because i dont want to update to a beta right now)
 
