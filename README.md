@@ -6,4 +6,4 @@ now made in xcode swift and not xamarin.mac because it sucked
     - 12: use SMLoginItem...
     - 13: use register()
     - will be done when macos 13 releases (because i dont want to update to a beta right now)
-
+nvm all that is kind of garbage because it works on ventura anyways
