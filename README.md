@@ -1,9 +1,7 @@
 # detnsw-autologin-macos
-a version of detnsw-autologin made for macos\
-now made in xcode swift and not xamarin.mac because it sucked
-## to-dos (basically just notes for me):
- - check macos version (`ProcessInfo.processInfo.operatingSystemVersion.majorVersion`)
-    - 12: use SMLoginItem...
-    - 13: use register()
-    - will be done when macos 13 releases (because i dont want to update to a beta right now)\
-nvm all that is kind of garbage because it works on ventura anyways
+A version of [detnsw-autologin](https://github.com/circularsprojects/detnsw-autologin) for macOS.\
+This app automatically logs you into school internet in NSW
+
+## Version 2.0
+Version 2.0 of detnsw-autologin-macos brings a new UI, made using SwiftUI instead of storyboards.\
+The app should hopefully now be easier to understand and use, and have better error handling.
